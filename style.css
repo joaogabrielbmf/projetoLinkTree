@@ -90,7 +90,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px 0;
+  padding: 24px;
 }
 ul li a {
   display: flex;
@@ -113,7 +113,7 @@ ul li a:hover {
 
 #social-links {
   display: flex;
-  padding: 24px 0;
+  padding: 24px;
   justify-content: center;
   align-items: center;
   font-size: 24px;
@@ -134,4 +134,14 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
 }
